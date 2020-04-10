@@ -21,12 +21,21 @@ You should have these before getting started
 * [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) (installed)
 
 ### Clone / Download
-You may download ZIP file and extract the files or
+In Raspbian, you may download ZIP file and extract the files or open Terminal and run
 
 ```
 cd /your-desired-path
 git clone https://github.com/azfaralsukor/PiTimekeeperPlus.git
 ```
+
+### Installing pip packages
+Run
+```
+pip3 install python-nmap --user
+```
+
+### Registering MAC Address
+To keep tab on which device is online on the network, register the MAC Addresses in [pixeling.py](pixeling.py) starting from line 52. There are two modes that can be alternate between 8 devices at a time.
 
 ### Run
 ```
