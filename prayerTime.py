@@ -35,6 +35,9 @@ def getNext(prayerTimes):
     if nextPrayer == "":
         nextPrayer = prayerTimeNames[0]
         prayerTimes = getPrayerTimes()
+        
+    if not prayerTimes:
+        return [0,0], "Fail to fetch data. (0:0)", [] 
 
     nextPrayerCap = nextPrayer.capitalize()
     tdelta = datetime.datetime.strptime(
